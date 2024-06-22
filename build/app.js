@@ -13,8 +13,8 @@ let miesiac = "Pazdziernika";
 let rok = 1991;
 router
     .get('/hello', (ctx, next) => {
-    //ctx.body = `\n\n ${hello} \n\n Pierwsze wydanie kernela Linuksa miało miejsce ${dzien} ${miesiac} ${rok}  `;
-    ctx.body = `Pierwsze wydanie kernela Linuksa miało miejsce`;
+    ctx.body = `\n\n ${hello} \n\n Pierwsze wydanie kernela Linuksa miało miejsce ${dzien} ${miesiac} ${rok}  `;
+    //ctx.body = `Pierwsze wydanie kernela Linuksa miało miejsce`;
 })
     .get('/goodbye', (ctx, next) => {
     ctx.body = 'Goodbye, world';
